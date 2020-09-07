@@ -1,0 +1,22 @@
+@import "variables";
+
+body > header {
+  background-color: #434CCC;
+}
+
+.incon-menu {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  list-style:$none;
+  text-decoration: $none;
+  background-image: url(../webroot/icon/icon_menu.png);
+  background-repeat: no-repeat;
+  transform: translate(315px, 0px);
+}
+.list_item_menu {
+
+}
+h1 {
+  font-family: "DM Serif Display";
+}

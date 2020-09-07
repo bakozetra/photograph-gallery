@@ -1,2 +1,54 @@
-ul {
-  display: flex; }
+@font-face {
+  font-family: "DM Serif Display";
+  font-style: "normal";
+  font-weight: 400;
+  src: local("DM Serif Display"), url("../fonts/dm_serif_display_400.woff2") format("woff2"), url("../fonts/dm_serif_display_400.woff") format("woff"); }
+
+@font-face {
+  font-family: "DM Serif Display";
+  font-style: "normal";
+  font-weight: 700;
+  src: local("DM serif display"), url("../fonts/dm_serif_display_700.woff2") format("woff2"), url("../fonts/dm_serif_display_700.woff") format("woff"); }
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: "normal";
+  font-weight: 400;
+  src: local("DM Sans"), url("../fonts/dm_sans_400.woff2") format("woff2"), url("../fonts/dm_sans_400.woff") format("woff"); }
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: "normal";
+  font-weight: 700;
+  src: local("DM Sans"), url("../fonts/dm_sans_700.woff2") format("woff2"), url("../fonts/dm_sans_700.woff") format("woff"); }
+
+body {
+  font-family: "DM Sans"; }
+
+body {
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+h2 {
+  font-size: 40px; }
+
+h1 {
+  color: white; }
+
+body > header {
+  background-color: #434CCC; }
+
+.incon-menu {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  list-style: none;
+  text-decoration: none;
+  background-image: url(../webroot/icon/icon_menu.png);
+  background-repeat: no-repeat;
+  transform: translate(315px, 0px); }
+
+h1 {
+  font-family: "DM Serif Display"; }
