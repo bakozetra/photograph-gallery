@@ -16,9 +16,9 @@ h1 {
 ul  {
   padding-left: $origin;
 }
-article {
-  padding-left: 1rem;
-  padding-right: 1.25rem;
+
+article ,footer {
+ @include padding-left-right;
 }
 button {
   font-family: "DM Sans";
@@ -29,6 +29,11 @@ form input {
 form input , 
 button {
   border-radius: 5px;
+}
+footer li a 
+, footer p,
+ .decription {
+  @include generalColor;
 }
 .unorder_link_icon {
   display: flex;
