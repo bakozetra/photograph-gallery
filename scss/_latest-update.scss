@@ -1,0 +1,25 @@
+@import "variables";
+
+.container_latest {
+  background-color:#FFDD78;
+}
+@mixin latest {
+  display: flex;
+  flex-direction: column;
+}
+form , .container_latest {
+ @include latest;
+}
+@mixin size {
+  height: 48px;
+  margin-bottom: 1rem;
+}
+button,
+form input {
+  @include size;
+}
+
+button {
+  width: 169px;
+}
+
