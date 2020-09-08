@@ -1,22 +1,63 @@
 @import "variables";
 
-body > header {
+.menu_container {
   background-color: #434CCC;
 }
-
 .incon-menu {
   display: block;
   width: 1rem;
   height: 1rem;
-  list-style:$none;
-  text-decoration: $none;
-  background-image: url(../webroot/icon/icon_menu.png);
+  background-image: url(../icon/icon_menu.png);
   background-repeat: no-repeat;
-  transform: translate(315px, 0px);
+  position: absolute;
+  top: 2.5rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
 }
-.list_item_menu {
 
+.menu {
+  @include my_list;
 }
-h1 {
-  font-family: "DM Serif Display";
+.checkbox_input[type=checkbox]:checked ~ header label{
+  display: block;
+  position: $position;
+  top: $origin;
+  left: $origin;
+  bottom: $origin;
+  right: $origin;
+  z-index: 999;
+  background-color: transparent;
+  background: none;
+  width: 100%;
+  height: 100%;
 }
+
+
+.checkbox_input:checked~nav {
+  transform: translateX(0);
+  position: absolute;
+  top: $origin;
+  left: $origin;
+  bottom: $origin;
+  right: $origin;
+  z-index: 1;
+  width: 250px;
+  background-color:rgb(100, 96, 96);
+  box-shadow: $origin rgba($origin, $origin, $origin, 0.25);
+}
+span {
+  display: none;
+}
+.checkbox_input:checked ~ nav {
+  transform: translateX(0);
+  position: $position;
+  top: $origin;
+  left: auto;
+  bottom: $origin;
+  right: $origin;
+  z-index: 1;
+  width: 250px;
+  background-color:rgb(100, 96, 96);
+  box-shadow: $origin $origin 50px rgba($origin, $origin, $origin, 0.25);
+}
+

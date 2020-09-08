@@ -7,23 +7,26 @@
   <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-  <input type="checkbox" id="menu-checkbox" class="checkbox_input">
-  <header class="menu-header">
-      <label for="menu-checkbox" class="incon-menu">
-          <span>menu</span>
-      </label>
-      <h1 class="header_logo">Photograph</h1>
-  </header>
-  <nav class="menu">
-    <ul class="unorder_menu">
-      <li class="list_item_menu about"> <a href="">About</a></li>
-      <li class="list_item_menu portfolio"><a href="">Portfolio</a></li>
-      <li class="list_item_menu blog"><a href="">Blog</a></li>
-      <li class="list_item_menu contact"><a href="">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="menu_container">
+    <input type="checkbox" id="menu-checkbox" class="checkbox_input">
+    <header class="menu-header">
+        <label for="menu-checkbox" class="incon-menu">
+            <span>menu</span>
+        </label>
+        <h1 class="header_logo">Photograph</h1>
+    </header>
+    <nav class="menu">
+      <ul class="unorder_menu">
+        <li class="list_item_menu about"> <a href="">About</a></li>
+        <li class="list_item_menu portfolio"><a href="">Portfolio</a></li>
+        <li class="list_item_menu blog"><a href="">Blog</a></li>
+        <li class="list_item_menu contact"><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
   <main>
     <article class="">
+      <a href=""> <- Back to portfolio</a>
       <header>
         <h2>
             Beauty is seen
@@ -88,10 +91,10 @@
          have managed to capture the sheer size – gravitas even
          – and spellbinding nature of these eroded walls.
       </p>
-      <ul>
-        <li><a href=""><img src="../webroot/icon/icon_facebook.png" alt=""></a></li>
-        <li><a href=""></a><img src="../webroot/icon/icon_twitter.png" alt=""></li>
-        <li><a href=""><img src="../webroot/icon/icon_instagram.png" alt=""></a></li>
+      <ul class="unorder_link_icon">
+        <li class="icon_share_link"><a href=""><img src="../webroot/icon/icon_facebook.png" alt=""></a></li>
+        <li class="icon_share_link"><a href=""></a><img src="../webroot/icon/icon_twitter.png" alt=""></li>
+        <li class="icon_share_link"><a href=""><img src="../webroot/icon/icon_instagram.png" alt=""></a></li>
       </ul>
     </article>
     <article>
@@ -110,33 +113,33 @@
   </main>
   <footer>
     <nav>
-      <ul>
-        <li>
-          <h2>Photograph</h2>
-          <p>The personal website of Jesse McJessesen, professional photographer.</p>
-        </li>
-        <li>
+      <div>
+        <h2>Photograph</h2>
+        <p>The personal website of Jesse McJessesen, professional photographer.</p>
+      </div>
+      <ul class="unorder_link_icon">
+        <li class="icon_share_link">
           <a href=""><img src="../webroot/icon/icon_facebook.png" alt=""></a>
         </li>
-        <li>
+        <li class="icon_share_link">
           <a href=""><img src="../webroot/icon/icon_twitter.png" alt=""></a>
         </li>
-        <li>
+        <li class="icon_share_link">
           <a href=""><img src="../webroot/icon/icon_instagram.png" alt=""></a>
         </li>
       </ul>
       <ul>
         <li>
-          Home
+          <a href="">  Home</a>
         </li>
         <li>
-          About
+          <a href="">About</a>
         </li>
         <li>
-          Portfolio
+          <a href="">Portfolio</a>
         </li>
         <li>
-          blog
+         <a href="">Blog</a>
         </li>
         <li>
           Contact

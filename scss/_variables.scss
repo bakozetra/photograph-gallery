@@ -1,4 +1,33 @@
 
 $none: none;
 $origin: 0;
-$positon : absolute;
+$position : absolute;
+
+
+@mixin reset-list {
+  transform: translateX(-180px);
+  position:$position;
+}
+@mixin horizontal-list {
+    @include reset-list;
+ ul {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    top: $origin;
+    left: $origin;
+    bottom: $origin;
+    padding: $origin; 
+ } 
+    
+}
+
+@mixin my_list {
+  @include horizontal-list; 
+  li {
+    background-repeat: no-repeat;
+    background-position: 10px 15px;
+    transform: translate(29px, 80px);
+  }
+}
