@@ -7,7 +7,32 @@ li {
 }
 h2 {
   font-size: 40px;
+  font-family: " DM Serif Display";
  }
 h1 {
   color: white;
+  margin: $origin;
+}
+ul  {
+  padding-left: $origin;
+}
+article {
+  padding-left: 1rem;
+  padding-right: 1.25rem;
+}
+button {
+  font-family: "DM Sans";
+}
+form input {
+  box-sizing: border-box;
+}
+form input , 
+button {
+  border-radius: 5px;
+}
+.unorder_link_icon {
+  display: flex;
+}
+.icon_share_link a img  {
+  height: 18px;
 }
