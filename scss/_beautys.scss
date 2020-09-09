@@ -1,0 +1,28 @@
+@import "variables";
+.container {
+  background-color: rgba(67, 76, 204, 0.05);
+}
+.unorder_list_info {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+@media (min-width : 380px) {
+  .container_info {
+    @include generalDiv;
+  }
+  .more-info {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .place-info {
+  
+  }
+  .content-intro {
+    width: 50%;
+  }
+  .more-info {
+    padding-bottom: 72px;
+    padding-top: 89px;
+  } 
+}
