@@ -2,7 +2,51 @@
 $none: none;
 $origin: 0;
 $position : absolute;
+$transform-text : uppercase;
+$start-number : 1rem;
+$first-color : #434CCC;
+$letterColor : white;
+@mixin decoration {
+  text-decoration: $none;
+}
+a {
+  @include decoration;
+}
+@mixin colors {
+  background-color: $first-color;
+}
+@mixin letter-color {
+  color:$letterColor;
+}
+button ,
+ h1 a , .list_item_menu a  {
+@include letter-color;
+}
 
+@mixin generalColor {
+  color: rgba(0, 0, 0, 0.5);
+}
+@mixin blackColor {
+  color:  #000000;
+}
+@mixin transformUppercase {
+  text-transform: $transform-text;
+}
+label ,
+ h1 , 
+ .container_latest h3 {
+  @include transformUppercase;
+}
+@mixin padding-left-right {
+  padding-left: 1rem;
+  padding-right: 1.25rem;
+}
+
+
+button,
+.menu_container {
+  @include colors;
+}
 
 @mixin reset-list {
   transform: translateX(-180px);
@@ -16,11 +60,10 @@ $position : absolute;
     display: flex;
     flex-direction: column;
     top: $origin;
-    left: $origin;
     bottom: $origin;
     padding: $origin; 
  } 
-    
+   
 }
 
 @mixin my_list {
@@ -30,4 +73,36 @@ $position : absolute;
     background-position: 10px 15px;
     transform: translate(29px, 80px);
   }
+}
+
+ @mixin articles {
+  width: 100%;
+  margin: 0;
+  padding: 50px 0;
+ }
+.container {
+  @include articles;
+}
+@mixin generalDiv {
+  max-width: 1200px ;
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+}
+ 
+@mixin  desktopFont-size {
+  font-size: 52px;
+}
+@mixin desktopFont-size-beauty {
+  font-size: 72px;
+}
+
+@mixin line-height {
+  font-size: 16px;
+  line-height: 24px;
+}
+@mixin font-size1 {
+  font-size : 52px
+}
+@mixin font-size2 {
+  font-size: 40px;
 }
