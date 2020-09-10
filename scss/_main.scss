@@ -1,4 +1,12 @@
 @import "variables"; 
+ :root {
+   --padding : 78px;
+ }
+ .active-image + div  
+ , .about_personal{
+    padding-bottom: var(--padding);
+ }
+
 .unorder_link_icon {
   display: flex;
 }
@@ -6,6 +14,10 @@
   height: 18px;
   margin-right: 0.75rem;
 }
+
+p {
+  @include line-height;
+} 
 @media (min-width : 380px) {
   .container_header h2 , .place-info h2 {
     @include desktopFont-size;
@@ -13,11 +25,7 @@
   .content-intro h2 {
     @include desktopFont-size-beauty;
   }
-  
-
-}
-@media (min-width : 380px) {
-  article {
+    article {
     padding :$origin;
   }
 }
