@@ -2,12 +2,22 @@
 body {
    margin: $origin;
 }
+html {
+   min-width: 100%;
+  
+}
 li {
   list-style: $none;
 }
-h2 {
+h1 a {
+  font-size: 24px;
+} 
+
+h2 , h3 {
   font-size: 40px;
   font-family: " DM Serif Display";
+  color:  #000000;
+  margin: 0;
  }
 h1 {
   color: white;
@@ -15,9 +25,10 @@ h1 {
 }
 ul  {
   padding-left: $origin;
+  margin: 0;
 }
 
-article ,footer {
+article {
  @include padding-left-right;
 }
 button {
@@ -30,14 +41,22 @@ form input ,
 button {
   border-radius: 5px;
 }
+
 footer li a 
 , footer p,
- .decription {
+ .decription , .unorder_list_info b {
   @include generalColor;
 }
-.unorder_link_icon {
-  display: flex;
+
+figure {
+  margin: $origin;
 }
-.icon_share_link a img  {
-  height: 18px;
+li a {
+  @include line-height ;
 }
+.unorder_list_info p, footer p a {
+   font-family: "DM Sans";
+   font-weight: bold;
+}
+
+
