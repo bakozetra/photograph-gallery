@@ -1,0 +1,23 @@
+@import "variables"; 
+.unorder_link_icon {
+  display: flex;
+}
+.icon_share_link a img  {
+  height: 18px;
+  margin-right: 0.75rem;
+}
+@media (min-width : 380px) {
+  .container_header h2 , .place-info h2 {
+    @include desktopFont-size;
+  }
+  .content-intro h2 {
+    @include desktopFont-size-beauty;
+  }
+  
+
+}
+@media (min-width : 380px) {
+  article {
+    padding :$origin;
+  }
+}
