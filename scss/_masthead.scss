@@ -1,19 +1,26 @@
 @import "variables";
-h1  a {
- font-family: "DM Serif Display";
+:root {
+  --size: 16px;
+}
+h1 {
+  padding-top: var(--size);
+  padding-bottom: var(--size);
+}
+h1 a {
+  font-family: "DM Serif Display";
 }
 .header_container {
- @include colors;
+  @include colors;
 }
 
 .incon-menu {
   display: block;
-  width: 1rem;
+  width: 2rem;
   height: 1.5rem;
   background-image: url(../icon/icon_menu.png);
   background-repeat: no-repeat;
   position: absolute;
-  background-size: 1rem;
+  background-size: 20px 0.85rem;
   top: 1rem;
   right: 1.5rem;
   bottom: 1.5rem;
@@ -22,7 +29,7 @@ h1  a {
 .menu {
   @include my_list;
 }
-.checkbox_input[type=checkbox]:checked ~ header label{
+.checkbox_input[type="checkbox"]:checked ~ header label {
   display: block;
   position: $position;
   top: $origin;
@@ -36,7 +43,6 @@ h1  a {
   height: 100%;
 }
 
-
 .checkbox_input:checked ~ nav {
   transform: translateX(0);
   position: absolute;
@@ -46,7 +52,7 @@ h1  a {
   right: $origin;
   z-index: 1;
   width: 250px;
-  background-color:rgb(100, 96, 96);
+  background-color: rgb(100, 96, 96);
   box-shadow: $origin rgba($origin, $origin, $origin, 0.25);
 }
 span {
@@ -68,7 +74,10 @@ span {
   display: none;
 }
 
-@media (min-width :380px ) {
+@media (min-width: 380px) {
+  h1 a {
+    @include font-size2;
+  }
   .menu {
     padding: 0;
     background-color: transparent;
@@ -79,15 +88,14 @@ span {
     transform: none;
     transition: none;
   }
-  
 
   .menu ul {
     flex-direction: row;
-   display: flex;
-   top : -4.5rem;
-   right: 5.5rem;
+    display: flex;
+    top: -3.5rem;
+    right: 5.5rem;
   }
-  
+
   .incon-menu {
     background-image: $none;
   }
@@ -95,16 +103,16 @@ span {
     background-repeat: no-repeat;
     background-position: 10px 15px;
     transform: none;
- }
-   .header_container {
+  }
+  .header_container {
     @include articles;
     padding: $origin;
   }
   .menu_container {
-    @include generalDiv
+    @include generalDiv;
   }
   .menu ul li a {
-    font-size: 16px;
+    font-size: var(--size);
     padding-right: 1rem;
   }
 }
