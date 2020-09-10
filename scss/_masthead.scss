@@ -1,16 +1,20 @@
 @import "variables";
-
-.menu_container {
-  background-color: #434CCC;
+h1  a {
+ font-family: "DM Serif Display";
 }
+.header_container {
+ @include colors;
+}
+
 .incon-menu {
   display: block;
   width: 1rem;
-  height: 1rem;
+  height: 1.5rem;
   background-image: url(../icon/icon_menu.png);
   background-repeat: no-repeat;
   position: absolute;
-  top: 2.5rem;
+  background-size: 1rem;
+  top: 1rem;
   right: 1.5rem;
   bottom: 1.5rem;
 }
@@ -33,7 +37,7 @@
 }
 
 
-.checkbox_input:checked~nav {
+.checkbox_input:checked ~ nav {
   transform: translateX(0);
   position: absolute;
   top: $origin;
@@ -49,6 +53,7 @@ span {
   display: none;
 }
 .checkbox_input:checked ~ nav {
+  @include colors;
   transform: translateX(0);
   position: $position;
   top: $origin;
@@ -57,7 +62,49 @@ span {
   right: $origin;
   z-index: 1;
   width: 250px;
-  background-color:rgb(100, 96, 96);
   box-shadow: $origin $origin 50px rgba($origin, $origin, $origin, 0.25);
 }
+.checkbox_input {
+  display: none;
+}
 
+@media (min-width :380px ) {
+  .menu {
+    padding: 0;
+    background-color: transparent;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: none;
+    transform: none;
+    transition: none;
+  }
+  
+
+  .menu ul {
+    flex-direction: row;
+   display: flex;
+   top : -4.5rem;
+   right: 5.5rem;
+  }
+  
+  .incon-menu {
+    background-image: $none;
+  }
+  .list_item_menu {
+    background-repeat: no-repeat;
+    background-position: 10px 15px;
+    transform: none;
+ }
+   .header_container {
+    @include articles;
+    padding: $origin;
+  }
+  .menu_container {
+    @include generalDiv
+  }
+  .menu ul li a {
+    font-size: 16px;
+    padding-right: 1rem;
+  }
+}
