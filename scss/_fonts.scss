@@ -7,14 +7,6 @@ $font-faces :
      name : 'DM Serif Display',
   ),
   (
-     font-family : 'DM Serif Display',
-     font-style : 'normal',
-     font-weight : 700,
-     sytem-name :"dm_serif_display",
-     src : 'dm_serif_display_700',
-     name : 'DM serif display',
-   ),
-  (
      font-family : 'DM Sans',
      font-style : 'normal',
      font-weight : 400,
@@ -43,4 +35,5 @@ $font-faces :
  }
  body {
    font-family: "DM Sans";
+   font-weight: normal;
  }
