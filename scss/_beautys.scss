@@ -1,15 +1,18 @@
 @import "variables";
 .container_info {
-    @include padding-left-right;
+  @include padding-left-right;
 }
 .content-intro h2 {
   @include font-size1;
   padding-bottom: calc(var(--padding) - 13px);
+  padding-top: calc(var(--padding) - 17px);
 }
 .content-intro p {
- padding-bottom: calc(var(--padding) + 4px);
+  padding-bottom: calc(var(--padding) + 4px);
 }
-
+.unorder_list_info p {
+  font-weight: bold;
+}
 .container {
   background-color: rgba(67, 76, 204, 0.05);
 }
@@ -17,33 +20,57 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.content-intro a {
+  background-image: url(../icon/icon_arrow_left.png);
+  background-repeat: no-repeat;
+  padding-left: 2rem;
+  background-size: 1rem;
+  background-position-y: 0.4rem;
+  @include generalColor;
+}
+.unorder_list_info li {
+  padding-bottom: calc(var(--padding) - 48px);
+}
 
+.active-image-bottom img + img {
+ opacity: 0.5;
+}
+.active-image img {
+  width: 87.7vw;
+  height: calc(87.7vw * 429 / 690);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+// this is for google chome
+
+.active-image-bottom img {
+  width: 35vw;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+// This width is for firefox 
 
 .active-image-bottom {
   display: flex;
+  width: 374%;
 }
-.active-image img {
-  width: 87vw;
-  height: calc(87vw * 429 / 690);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
+.place-info p {
+   font-size: calc(var(--size) + 2px);
 }
-.active-image-bottom img {
-  width: 40vw;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  margin-right: 0.5rem;
+.place-info p + p {
+  font-size: var(--size);
 }
 .place-info h2 {
   padding-top: calc(var(--padding) - 3px);
   padding-bottom: calc(var(--padding) - 47px);
-
 }
-.place-info p  {
+.place-info p {
   padding-bottom: calc(var(--padding) - 45px);
   margin: 0;
 }
+
 @media (min-width: 380px) {
   .container_info {
     @include generalDiv;
@@ -52,8 +79,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .place-info {
-  }
+
   .content-intro {
     width: 50%;
   }
@@ -61,19 +87,18 @@
     padding-bottom: 72px;
     padding-top: 89px;
   }
-  .content-intro a {
-    background-image: url(../icon/icon_arrow_left.png);
-    background-repeat: no-repeat;
-    padding-left: 2rem;
-    background-size: 1rem;
-    background-position-y: 0.5rem;
-  }
+
   .active-image-bottom img {
-    width: 10.4vw;
+    width: 10.7vw;
     background-repeat: no-repeat;
-    border-radius: 10px;
+    border-radius: 5px;
+    margin-right: 0.25rem
   }
   .place-info h2 {
     padding-top: 0;
   }
+  .place-info p {
+    width : 95%;
+  }
+  
 }
