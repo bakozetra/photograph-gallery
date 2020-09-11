@@ -45,7 +45,6 @@ form input {
 form input , 
 button {
   border-radius: 5px;
-  box-sizing: border-box;
 }
 
 footer li a 
@@ -57,7 +56,7 @@ footer li a
 figure {
   margin: $origin;
 }
-li a {
+li a , input , button {
   @include line-height ;
 }
 
