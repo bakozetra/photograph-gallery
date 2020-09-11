@@ -1,64 +1,80 @@
 @import "variables";
 body {
-   margin: $origin;
+  margin: $origin;
 }
 html {
-   max-width: 100%;
-   overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
-li {
-  list-style: $none;
-}
-h1 a {
-  font-size: 24px;
-} 
-
 h1 {
   color: white;
   margin: $origin;
 }
 
-h2  , footer h3 {
+h1 a {
+  font-size: 24px;
+}
+
+li {
+  list-style: $none;
+}
+
+h2,
+footer h3 {
   font-size: 40px;
   font-family: " DM Serif Display";
-  color:  #000000;
+  color: #000000;
   margin: 0;
- }
- h3 {
-   margin: 0;
- }
- p {
-   margin: 0;
- }
-ul  {
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
   padding-left: $origin;
   margin: 0;
 }
 
 article {
- @include padding-left-right;
+  @include padding-left-right;
 }
 
 form input {
   box-sizing: border-box;
 }
-form input , 
+form input,
 button {
   border-radius: 5px;
 }
 
-footer li a 
-, footer p,
- .decription , .unorder_list_info b {
+footer li a,
+footer p,
+.decription,
+.unorder_list_info b {
   @include generalColor;
 }
 
 figure {
   margin: $origin;
 }
-li a , input , button {
-  @include line-height ;
+
+li a,
+input,
+button {
+  @include line-height;
 }
 
+button,
+h1 a,
+.list_item_menu a {
+  @include letter-color;
+}
 
-
+a {
+  @include decoration;
+}
