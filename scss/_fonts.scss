@@ -1,39 +1,36 @@
-$font-faces :
-  (
-     font-family : 'DM Serif Display',
-     font-style : 'normal',
-     font-weight : 400,
-     src : 'dm_serif_display_400',
-     name : 'DM Serif Display',
+$font-faces: (
+    font-family: "DM Serif Display",
+    font-style: "normal",
+    font-weight: 400,
+    src: "dm_serif_display_400",
+    name: "DM Serif Display",
   ),
   (
-     font-family : 'DM Sans',
-     font-style : 'normal',
-     font-weight : 400,
-     src : 'dm_sans_400',
-     name : 'DM Sans',
-   ),
-   (
-     font-family : 'DM Sans',
-     font-style : 'normal',
-     font-weight : 700,
-     sytem-name :"dm_sans_700",
-     src : 'dm_sans_700',
-     name : 'DM Sans',
-   );
+    font-family: "DM Sans",
+    font-style: "normal",
+    font-weight: 400,
+    src: "dm_sans_400",
+    name: "DM Sans",
+  ),
+  (
+    font-family: "DM Sans",
+    font-style: "normal",
+    font-weight: 700,
+    sytem-name: "dm_sans_700",
+    src: "dm_sans_700",
+    name: "DM Sans",
+  );
 
-   
- @each $font-face in $font-faces {
-   @font-face {
-     font-family : map-get($font-face , font-family);
-     font-style : map-get($font-face , font-style);
-     font-weight: map-get($font-face, font-weight);
-     src : local(map-get($font-face , name)),
-           url('../fonts/#{map-get($font-face , src)}.woff2')format('woff2'),
-           url('../fonts/#{map-get($font-face , src)}.woff')format('woff');
-   }
- }
- body {
-   font-family: "DM Sans";
-   font-weight: normal;
- }
+@each $font-face in $font-faces {
+  @font-face {
+    font-family: map-get($font-face, font-family);
+    font-style: map-get($font-face, font-style);
+    font-weight: map-get($font-face, font-weight);
+    src: local(map-get($font-face, name)), url("../fonts/#{map-get($font-face , src)}.woff2") format("woff2"),
+      url("../fonts/#{map-get($font-face , src)}.woff") format("woff");
+  }
+}
+body {
+  font-family: "DM Sans";
+  font-weight: normal;
+}
