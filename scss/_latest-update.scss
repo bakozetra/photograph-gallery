@@ -18,19 +18,23 @@ button,
 form input {
   @include size;
 }
-
+form label {
+  padding-bottom:calc(var(--padding-value) / 2);
+}
 form input {
   // This is width is for fire fox
   width: -moz-available;
   // this is for google chrome
   width: -webkit-fill-available;
-  border: 1px solid #DADADA;
+  border: 1px solid #dadada;
 }
+
 button {
   width: 100%;
   min-width: 50px;
   max-width: 169px;
   border: $none;
+  font-weight: bold;
 }
 .container_header h3 {
   padding-top: calc(var(--padding) - 17px);
@@ -41,7 +45,7 @@ button {
   padding-bottom: calc(var(--padding) - 34px);
 }
 
-@media (min-width: 380px) {
+@media (min-width: 375px) {
   .container_latest {
     @include articles;
     padding: 0;
@@ -70,7 +74,7 @@ button {
     flex-direction: row;
   }
   input {
-    margin-right: 2rem;
+    margin-right: var(--padding-value);
   }
   form {
     align-items: stretch;
