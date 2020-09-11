@@ -1,44 +1,59 @@
 @import "variables";
-
+form label {
+  font-weight: bold;
+}
 .container_latest {
-  background-color:#FFDD78;
+  background-color: #ffdd78;
 }
 @mixin latest {
   display: flex;
   flex-direction: column;
 }
-form  {
- @include latest;
+form {
+  @include latest;
+  padding-bottom: calc(var(--padding) - 13px);
 }
-@mixin size {
-  height: 48px;
-  margin-bottom: 1rem;
-}
+
 button,
 form input {
   @include size;
 }
 
 form input {
+  // This is width is for fire fox
+  width: -moz-available;
+  // this is for google chrome
   width: -webkit-fill-available;
+  border: 1px solid #DADADA;
 }
 button {
-  width: 169px;
+  width: 100%;
+  min-width: 50px;
+  max-width: 169px;
+  border: $none;
+}
+.container_header h3 {
+  padding-top: calc(var(--padding) - 17px);
+  padding-bottom: calc(var(--padding) - 59px);
+  font-weight: 400;
+}
+.container_latest h2 {
+  padding-bottom: calc(var(--padding) - 34px);
 }
 
-@media (min-width : 380px) {
+@media (min-width: 380px) {
   .container_latest {
-   @include articles;
-   padding : 0;
+    @include articles;
+    padding: 0;
   }
-  .container_latest .container_header  {
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     max-width: 1200px ;
-     margin-inline-end: auto;
+  .container_latest .container_header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    margin-inline-end: auto;
     margin-inline-start: auto;
   }
-  
+
   .container_latest header {
     width: 70%;
   }
@@ -46,21 +61,23 @@ button {
     display: contents;
   }
   .container_latest {
-   padding-top: 72px;
-   padding-bottom: 140px;
+    padding-top: calc(var(--padding) + 6px);
+    padding-bottom: calc(var(--padding) + 18px);
   }
 
-} 
-@media (min-width : 380px) {
-   form div {
-     display: flex;
+  form div {
+    display: flex;
     flex-direction: row;
-   }
-   input {
-     margin-right: 2rem;
-   }
-   form {
+  }
+  input {
+    margin-right: 2rem;
+  }
+  form {
     align-items: stretch;
     justify-content: center;
-   }
+    padding-top: 3rem;
+  }
+  .container_header h3 {
+    padding-top: 0;
+  }
 }
