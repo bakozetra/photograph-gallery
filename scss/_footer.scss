@@ -1,4 +1,5 @@
 @import "variables";
+
 footer h3 {
   font-size: 24px;
 }
@@ -15,10 +16,17 @@ footer h3 {
   display: contents;
 }
 .blog_entry img {
-  width: 100px;
-  height: 60px;
-  margin-right: 2rem;
+  width: 70px;
+  height: 48px;
+  margin-right: 1.25rem;
   border-radius: 5px;
+}
+.blog_entry p  a {
+  font-size: 15px;
+}
+.blog_entry p + p {
+  font-weight: bold;
+  color: black;
 }
 
 .more_link,
@@ -43,9 +51,9 @@ footer h3 {
   justify-content: space-between;
   padding-bottom: 78px;
 }
-.about_personal h3 
-, p {
-   padding-bottom: calc(var(--padding) - 55px);
+.about_personal h3,
+p {
+  padding-bottom: calc(var(--padding) - 55px);
 }
 
 .more_link {
@@ -54,7 +62,7 @@ footer h3 {
   margin-inline-start: auto;
 }
 
-@media (min-width: 380px) {
+@media (min-width: 375px) {
   footer nav {
     display: flex;
     justify-content: space-between;
@@ -67,7 +75,7 @@ footer h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    @include generalDiv ;
+    @include generalDiv;
   }
   .about_personal {
     max-width: 20%;
@@ -78,5 +86,7 @@ footer h3 {
   .copy_link p {
     margin: 0;
   }
-
+  .blog_entry p  a {
+    font-size: var(--size);
+  }
 }
