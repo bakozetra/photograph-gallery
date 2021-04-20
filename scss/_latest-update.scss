@@ -23,16 +23,18 @@ form label {
 }
 form input {
   // This is width is for fire fox
-  width: -moz-available;
+  // width: -moz-available;
   // this is for google chrome
-  width: -webkit-fill-available;
+ width: 346px ;
+  padding-left: 16px;
+  max-width: 100%;
   border: 1px solid #dadada;
 }
 
 button {
   width: 100%;
-  min-width: 50px;
-  max-width: 169px;
+  min-width: 48px;
+  max-width: 172px;
   border: $none;
   font-weight: bold;
 }
@@ -47,8 +49,7 @@ button {
 
 @media (min-width: 375px) {
   .container_latest {
-    @include articles;
-    padding: 0;
+    padding-top: 79px;
   }
   .container_latest .container_header {
     display: grid;
@@ -57,6 +58,9 @@ button {
     margin-inline-end: auto;
     margin-inline-start: auto;
   }
+  .container_latest h2 {
+    padding-bottom: 104px;
+  }
 
   .container_latest header {
     width: 70%;
@@ -64,24 +68,27 @@ button {
   .container_header > div {
     display: contents;
   }
-  .container_latest {
-    padding-top: calc(var(--padding) + 6px);
-    padding-bottom: calc(var(--padding) + 18px);
-  }
 
   form div {
     display: flex;
     flex-direction: row;
   }
-  input {
-    margin-right: var(--padding-value);
-  }
+
   form {
     align-items: stretch;
     justify-content: center;
     padding-top: 3rem;
   }
+  input {
+    // padding-left: 16px;
+    // padding-right: 172px;
+  }
+  button {
+    width: 170px;
+    margin-left: 74px;
+  }
   .container_header h3 {
     padding-top: 0;
   }
 }
+

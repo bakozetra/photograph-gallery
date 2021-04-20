@@ -41,20 +41,74 @@
           </p>
         </header>
         <div class="active_image_list">
-          <figure class="active-image">
+          <picture class="active-image" id="current-image">
+<!--            
+            <source media="(min-width: 1172px)" type="image/webp" srcset="../webroot/images/rock_carvings_lgs.webp">
+            <source media="(min-width : 1172px)" type="image/jpg" srcset="../webroot/images/rock_carving_lg.jpg">
+            <source media="(min-width:689px)" type="image/webp"   srcset="../webroot/images/rock_carvings_md.webp">
+            <source media="(min-width :689px)" type="image/jpg"   srcset="../webroot/images/rock_carvings_md.jpg">
+            <source media="(min-width: 274px)" type="image/webp"  srcset="../webroot/images/rock_carvings_sms.webp"> -->
             <img src="../webroot/images/rock_carvings_md.jpg" alt="">
-          </figure>
+          </picture>
           <div>
-            <figure class="active-image-bottom">
-              <img src="../webroot/images/rock_carvings_md.jpg" class="active-image-canyon--small" alt="">
-              <img src="../webroot/images/stairs_md.jpg" class="active-image-stairs" alt="">
-              <img src="../webroot/images/ripples_md.jpg" alt="active-image--ripples">
-              <img src="../webroot/images/sunset_md.jpg"  class="active-image-sunset" alt="">
-              <img src="../webroot/images/arches_md.jpg" class="active-image-arches" alt="">
-              <img src="../webroot/images/car_md.jpg" class="active-image-car" alt="">
-              <img src="../webroot/images/dunes_md.jpg" alt="">
-              <img src="../webroot/images/canyon_md.jpg" class="active-image-canyon--small" alt="">
-            </figure>
+            <picture class="active-image-bottom" id="children-image">
+              <li>
+                <a href="../webroot/images/rock_carvings_md.jpg" class="small-picture">
+                  <picture>
+                    <img src="../webroot/images/rock_carvings_md.jpg" class="active-image-canyon--small" alt="">
+                  </picture>
+                </a>
+              </li>
+              <li>
+                <a href="../webroot/images/stairs_md.jpg" class="small-picture">
+                <picture>
+                  <img src="../webroot/images/stairs_md.jpg" class="active-image-stairs" alt="">
+                </picture>
+              </a>
+              </li>
+              <li>
+                <a href="../webroot/images/ripples_md.jpg" class="small-picture">
+                <picture>
+                  <img src="../webroot/images/ripples_md.jpg" alt="active-image--ripples">
+                </picture>
+                </a>
+              </li>
+              <li>
+                <a href="../webroot/images/sunset_md.jpg" class="small-picture">
+                <picture>
+                  <img src="../webroot/images/sunset_md.jpg"  class="active-image-sunset" alt="">
+                </picture>
+                </a>
+              </li>
+              <li>
+                <a href="../webroot/images/arches_md.jpg" class="small-picture">
+                <picture>
+                  <img src="../webroot/images/arches_md.jpg" class="active-image-arches" alt="">
+                </picture>
+                </a>
+              </li>
+              <li>
+                <a href="../webroot/images/car_md.jpg" class="small-picture">
+                <picture>
+                  <img src="../webroot/images/car_md.jpg" class="active-image-car" alt="">
+                </picture>
+                </a>
+              </li>
+              <li>
+                <a href="../webroot/images/dunes_md.jpg" class="small-picture">
+                <picture>
+                <img src="../webroot/images/dunes_md.jpg" alt="">
+                </picture>
+                </a>
+              </li>
+              <li>
+                <a href="../webroot/images/canyon_md.jpg" class="small-picture">
+                <picture>
+                  <img src="../webroot/images/canyon_md.jpg" class="active-image-canyon--small" alt="">
+                </picture>
+                </a>
+              </li>
+            </picture>
           </div>
         </div>
         <div class="more-info">
@@ -71,7 +125,7 @@
               <li class="list_item_info-camera">
                 <b>Camera</b>
                 <p>Canon EOS
-                  1D Mark IV</p>
+                  <br>1D Mark IV</p>
               </li>
               <li class="list_item_info-lens">
                 <b>lens</b>
@@ -198,5 +252,16 @@
       </ul>
     </div>
   </footer>
+  <script>
+    const picture = (event) => {
+      const achore = event.target.closest('.small-picture');
+      if(achore) {
+        event.preventDefault();
+        const newImageUrl = document.querySelector('#current-image');
+        newImageUrl.querySelector('img').src= achore.href;
+      }
+    }
+    document.addEventListener('click', picture);
+  </script>
 </body>
 </html>

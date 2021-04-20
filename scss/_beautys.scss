@@ -1,4 +1,15 @@
 @import "variables";
+
+:root {
+  --padding: 78px;
+  --padding-value: 2rem;
+  --size: 16px;
+}
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 50px 0;
+}
 .container_info {
   @include padding-left-right;
 }
@@ -6,10 +17,16 @@
   @include font-size1;
   padding-bottom: calc(var(--padding) - 13px);
   padding-top: calc(var(--padding) - 17px);
+  font-family: "DM Serif Display";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 64px;
 }
+
 .content-intro p {
   padding-bottom: calc(var(--padding) + 4px);
 }
+
 .unorder_list_info p {
   font-weight: bold;
 }
@@ -19,6 +36,7 @@
 .unorder_list_info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap : 106px;
 }
 .content-intro a {
   background-image: url(../icon/icon_arrow_left.png);
@@ -36,7 +54,8 @@
   opacity: 0.5;
 }
 .active-image img {
-  width: 87.7vw;
+  width: 100%;
+  max-width: 1170px;
   height: calc(87.7vw * 429 / 690);
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,9 +77,13 @@
 }
 .place-info p {
   font-size: calc(var(--size) + 2px);
+  width: 100%;
+  line-height: 32px;
 }
 .place-info p + p {
-  font-size: var(--size);
+  font-size: calc(var(--size) - 1px);
+  width: 100%;
+  line-height: 24px;
 }
 .place-info h2 {
   padding-top: calc(var(--padding) - 3px);
@@ -92,12 +115,18 @@
     padding-bottom: calc(var(--padding) - 6px);
     padding-top: calc(var(--padding) + 11px);
   }
+  .unorder_list_info {
+    br {
+      display: no;
+    }
+  }
 
   .active-image-bottom img {
-    width: 10.7vw;
+    width: 137px;
     background-repeat: no-repeat;
     border-radius: 5px;
-    margin-right: calc(var(--padding-value) / 8);
+    margin-right: 10px;
+
   }
   .place-info h2 {
     padding-top: 0;

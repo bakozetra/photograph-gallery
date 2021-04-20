@@ -1,6 +1,5 @@
 @import "variables";
 
-.active-image + div,
 .about_personal {
   padding-bottom: var(--padding);
 }
@@ -8,6 +7,7 @@
 .unorder_link_icon {
   display: flex;
 }
+
 .icon_share_link a img {
   height: 18px;
   margin-right: 0.75rem;

@@ -4,9 +4,19 @@ h1 {
   padding-bottom: var(--size);
   padding-left: 1rem;
 }
+
 h1 a {
   font-family: "DM Serif Display";
+  font-weight: normal;
+  font-style: normal;
 }
+
+label,
+h1,
+.container_latest h3 {
+  @include transformUppercase;
+}
+
 .header_container {
   @include colors;
 }
@@ -59,10 +69,9 @@ span {
   display: $none;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 670px) {
   h1 a {
     @include font-size2;
-   
   }
   h1 {
     padding-left: 0;
@@ -94,7 +103,6 @@ span {
     transform: none;
   }
   .header_container {
-    @include articles;
     padding: $origin;
   }
   .menu_container {
@@ -104,4 +112,7 @@ span {
     font-size: var(--size);
     padding-right: 1.5rem;
   }
+
 }
+
+

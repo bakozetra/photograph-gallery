@@ -42,7 +42,7 @@ footer h3 {
   border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
   width: 100%;
   margin: 0 auto;
-  padding: 50px 0;
+ padding-top: 75px;
 }
 .about_personal + ul {
   display: flex;
@@ -78,15 +78,26 @@ p {
     @include generalDiv;
   }
   .about_personal {
-    max-width: 20%;
+   p {
+     width: 57%;
+   }
+   +ul {
+     width: 50%;
+   }
   }
-  .about_photo + div {
-    @include articles;
+  .about_photo {
+    padding-top: 72px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .copy_link p {
     margin: 0;
   }
-  .blog_entry p  a {
-    font-size: var(--size);
+  .blog_entry  { 
+     width: 40%;
+     a {
+      font-size: var(--size);
+     }
   }
 }
+
