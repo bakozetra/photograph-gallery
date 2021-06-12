@@ -26,7 +26,8 @@ $font-faces: (
     font-family: map-get($font-face, font-family);
     font-style: map-get($font-face, font-style);
     font-weight: map-get($font-face, font-weight);
-    src: local(map-get($font-face, name)), url("../fonts/#{map-get($font-face , src)}.woff2") format("woff2"),
+    src: local(map-get($font-face, name)),
+      url("../fonts/#{map-get($font-face , src)}.woff2") format("woff2"),
       url("../fonts/#{map-get($font-face , src)}.woff") format("woff");
   }
 }

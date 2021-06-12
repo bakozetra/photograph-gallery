@@ -3,9 +3,11 @@ body {
   margin: $origin;
 }
 html {
-  max-width: 100%;
+  width: 100%;
+  max-width: 1440px;
   overflow-x: hidden;
 }
+
 h1 {
   color: white;
   margin: $origin;
@@ -44,12 +46,14 @@ article {
   @include padding-left-right;
 }
 
-form input {
-  box-sizing: border-box;
-}
+// form input {
+//   box-sizing: border-box;
+// }
+
 form input,
 button {
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 footer li a,

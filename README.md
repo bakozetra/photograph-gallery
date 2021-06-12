@@ -15,7 +15,7 @@ First things first, let's get you set up. You will need the following…
 - Figma Font Helper
 
 ## Install
-
+npm run scss:watch
 We'll be using `node-sass` for our Sass compilation. Let's install that by doing:
 
 1. `npm i`
@@ -30,13 +30,13 @@ You can find the design:
 - by importing the `.fig` file in [the `source_materials` folder](./source_materials/) into your figma app.
 
 ### Source files
-
+npm run scss:watch
 Have a look in the `source_materials` folder. There you'll find any fonts you need, images that are required by the design work.
 
 2. Install any OTF/TTF fonts found in the `source_materials/fonts` folder in your system, so that you don't get bugged by Figma's Font replacement dialog box.
 
 ### Webroot
-
+a
 As with most setups, it's a good idea to isolate all the web-files in the `webroot` folder.
 Export all the images, fonts, HTML, JS, and CSS you use to this webroot folder (in the right subfolder of course!).
 
