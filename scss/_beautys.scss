@@ -1,165 +1,166 @@
 @import "variables";
 :root {
-  --padding: 78px;
-  --padding-value: 2rem;
-  --size: 16px;
+    --padding: 78px;
+    --padding-value: 2rem;
+    --size: 16px;
 }
+
 .container {
-  width: 100%;
-  margin: 0;
-  padding: 43px 0;
-}
-.container_info {
-  @include padding-left-right;
-}
-.content-intro h2 {
-  @include font-size1;
-  padding-bottom: calc(var(--padding) - 13px);
-  padding-top: calc(var(--padding) - 17px);       
-  font-family: "DM Serif Display";
-  font-weight: normal;
-  font-style: normal;
-  line-height: 64px;
+    width: 100%;
+    margin: 0;
+    padding: 43px 0;
+    background-color: rgba(67, 76, 204, 0.05);
+    .container_info {
+        @include padding-left-right;
+        .content-intro {
+            h2 {
+                @include font-size1;
+                padding-bottom: calc(var(--padding) - 13px);
+                padding-top: calc(var(--padding) - 17px);
+                font-family: "DM Serif Display";
+                font-weight: normal;
+                font-style: normal;
+                line-height: 64px;
+            }
+            p {
+                padding-bottom: calc(var(--padding) + 4px);
+            }
+            a {
+                background-image: url(../icon/icon_arrow_left.png);
+                background-repeat: no-repeat;
+                padding-left: var(--padding-value);
+                background-size: calc(var(--padding-value) / 2);
+                background-position-y: calc(var(--padding-value) / 5);
+                @include generalColor;
+            }
+        }
+        .active_image_list {
+            .active-image-wrapper {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                overflow-y: scroll;
+                .active-image-bottom {
+                    display: flex;
+                    img {
+                        // this is for google chome
+                        width: 35vw;
+                        background-repeat: no-repeat;
+                        border-radius: 5px;
+                        margin-right: calc(var(--padding-value) / 4);
+                        // opacity: 0.5;
+                    }
+                    img+img {
+                        opacity: 0.5;
+                    }
+                }
+            }
+            .active-image-wrapper::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        .more-info {
+            .unorder_list_info {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                p {
+                    font-weight: bold;
+                }
+                li {
+                    padding-bottom: calc(var(--padding) - 57px);
+                    line-height: 24px;
+                }
+                li p {
+                    padding-top: 8px;
+                }
+            }
+            .place-info {
+                p {
+                    font-size: calc(var(--size) + 2px);
+                    width: 100%;
+                    letter-spacing: -0.6px;
+                    line-height: 32px;
+                    padding-bottom: calc(var(--padding) - 45px);
+                    margin: 0;
+                }
+                p+p {
+                    font-size: calc(var(--size) - 1px);
+                    line-height: 24px;
+                    width: 100%;
+                    letter-spacing: 0.1px;
+                }
+                h2 {
+                    padding-top: calc(var(--padding) - 3px);
+                    padding-bottom: calc(var(--padding) - 47px);
+                }
+            }
+        }
+    }
 }
 
-.content-intro p {
-  padding-bottom: calc(var(--padding) + 4px);
-}
-
-.unorder_list_info p {
-  font-weight: bold;
-}
-.container {
-  background-color: rgba(67, 76, 204, 0.05);
-}
-.unorder_list_info {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.content-intro a {
-  background-image: url(../icon/icon_arrow_left.png);
-  background-repeat: no-repeat;
-  padding-left: var(--padding-value);
-  background-size: calc(var(--padding-value) / 2);
-  background-position-y: calc(var(--padding-value) / 5);
-  @include generalColor;
-}
-.unorder_list_info li {
-  padding-bottom: calc(var(--padding) - 57px);
-  line-height: 24px;
-}
-.unorder_list_info li p {
-  padding-top: 8px;
-}
-
-.active-image-bottom img + img {
-  opacity: 0.5;
-}
 .active-image img {
-  width: 100%;
-  max-width: 1170px;
-  height: calc(87.7vw * 429 / 690);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 5px;
-}
-
-.active-image-bottom img {
-  // this is for google chome
-  width: 35vw;
-  background-repeat: no-repeat;
-  border-radius: 5px;
-  margin-right: calc(var(--padding-value) / 4);
-}
-
-.active-image-bottom {
-  display: flex;
-  // Firefox does not support 35vw.
-  // width: 374%;
-}
-
-.place-info p {
-  font-size: calc(var(--size) + 2px);
-  width: 100%;
-  letter-spacing: -0.6px;
-  line-height: 32px;
-}
-
-.place-info p + p {
-  font-size: calc(var(--size) - 1px);
-  line-height: 24px;
-  width: 100%;
-  letter-spacing: 0.1px;
-}
-
-.place-info h2 {
-  padding-top: calc(var(--padding) - 3px);
-  padding-bottom: calc(var(--padding) - 47px);
-}
-.place-info p {
-  padding-bottom: calc(var(--padding) - 45px);
-  margin: 0;
-}
-.active-image-wrapper {
--ms-overflow-style: none;
-  scrollbar-width: none; 
-  overflow-y: scroll; 
-}
-
-.active-image-wrapper::-webkit-scrollbar {
-  display: none;
+    width: 100%;
+    max-width: 1170px;
+    height: calc(87.7vw * 429 / 690);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
 }
 
 @media (min-width: 375px) {
-  .container_info {
-    @include generalDiv;
-  }
-  .more-info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .place-info p {
-    letter-spacing: 0.2px;
-  }
-  .place-info p + p {
-    letter-spacing: 0.7px;
-  }
-
-  // adding  desktopFont-size-beauty to make it woks on Microsoft Edge
-  .content-intro h2 {
-    @include desktopFont-size-beauty;
-  }
-  .unorder_list_info {
-    br {
-      display: contents;
+    .container {
+        .container_info {
+            @include generalDiv;
+            .content-intro {
+                h2 {
+                    @include desktopFont-size-beauty;
+                }
+            }
+            .active_image_list {
+                .active-image-wrapper {
+                    .active-image-bottom {
+                        img {
+                            width: 137px;
+                            background-repeat: no-repeat;
+                            border-radius: 5px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            .more-info {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                padding-bottom: calc(var(--padding) - 6px);
+                padding-top: calc(var(--padding) + 11px);
+                .unorder_list_info {
+                    br {
+                        display: contents;
+                    }
+                }
+                .place-info {
+                    p {
+                        letter-spacing: 0.2px;
+                    }
+                    p+p {
+                        letter-spacing: 0.7px;
+                    }
+                    h2 {
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
     }
-  }
-}
-.more-info {
-  padding-bottom: calc(var(--padding) - 6px);
-  padding-top: calc(var(--padding) + 11px);
-}
-
-.active-image-bottom img {
-  width: 137px;
-  background-repeat: no-repeat;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-.place-info h2 {
-  padding-top: 0;
 }
 
 @media (min-width: 766px) {
-  .content-intro {
-    width: 70%;
-  }
+    .content-intro {
+        width: 70%;
+    }
 }
 
 @media (min-width: 1074px) {
-  .content-intro {
-    width: 50%;
-  }
+    .content-intro {
+        width: 50%;
+    }
 }

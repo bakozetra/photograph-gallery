@@ -1,339 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photograph</title>
     <link rel="stylesheet" href="./css/index.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="header_container">
-      <div class="menu_container">
-        <h1 class="header_logo"><a href="./logo">Photograph</a></h1>
-        <input type="checkbox" id="menu-checkbox" class="checkbox_input" />
-        <header class="menu-header">
-          <label for="menu-checkbox" class="incon-menu">
+        <div class="menu_container">
+            <h1 class="header_logo"><a href="./logo">Photograph</a></h1>
+            <input type="checkbox" id="menu-checkbox" class="checkbox_input" />
+            <header class="menu-header">
+                <label for="menu-checkbox" class="incon-menu">
             <span>menu</span>
           </label>
-        </header>
-        <nav class="menu">
-          <ul class="unorder_menu">
-            <li class="list_item_menu about"><a href="./about">About</a></li>
-            <li class="list_item_menu portfolio">
-              <a href="./portfolio">Portfolio</a>
-            </li>
-            <li class="list_item_menu blog"><a href="./blog">Blog</a></li>
-            <li class="list_item_menu contact">
-              <a href="./contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+            </header>
+            <nav class="menu">
+                <ul class="unorder_menu">
+                    <li class="list_item_menu about"><a href="./about">About</a></li>
+                    <li class="list_item_menu portfolio">
+                        <a href="./portfolio">Portfolio</a>
+                    </li>
+                    <li class="list_item_menu blog"><a href="./blog">Blog</a></li>
+                    <li class="list_item_menu contact">
+                        <a href="./contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
     <main>
-      <article class="container">
-        <div class="container_info">
-          <header class="content-intro">
-            <a href="./portfolio"> Back to portfolio</a>
-            <h2>Beauty is seen through a lens</h2>
-            <p>
-              Perspective matters.<br />
-              All my photographs try to capture that perspective, however
-              subtle.
-            </p>
-          </header>
-          <div class="active_image_list">
-            <picture class="active-image" id="current-image">
-              <!--            
+        <article class="container">
+            <div class="container_info">
+                <header class="content-intro">
+                    <a href="./portfolio"> Back to portfolio</a>
+                    <h2>Beauty is seen through a lens</h2>
+                    <p>
+                        Perspective matters.<br /> All my photographs try to capture that perspective, however subtle.
+                    </p>
+                </header>
+                <div class="active_image_list">
+                    <picture class="active-image" id="current-image">
+                        <!--            
             <source media="(min-width: 1172px)" type="image/webp" srcset="../webroot/images/rock_carvings_lgs.webp">
             <source media="(min-width : 1172px)" type="image/jpg" srcset="../webroot/images/rock_carving_lg.jpg">
             <source media="(min-width:689px)" type="image/webp"   srcset="../webroot/images/rock_carvings_md.webp">
             <source media="(min-width :689px)" type="image/jpg"   srcset="../webroot/images/rock_carvings_md.jpg">
             <source media="(min-width: 274px)" type="image/webp"  srcset="../webroot/images/rock_carvings_sms.webp"> -->
-              <img src="../webroot/images/rock_carvings_md.jpg" alt="" />
-            </picture>
-            <div class="active-image-wrapper">
-              <picture class="active-image-bottom" id="children-image">
-                <li>
-                  <a
-                    href="../webroot/images/rock_carvings_md.jpg"
-                    class="small-picture"
-                  >
-                    <picture>
-                      <img
-                        src="../webroot/images/rock_carvings_md.jpg"
-                        class="active-image-canyon--small"
-                        alt=""
-                      />
+                        <img src="../webroot/images/rock_carvings_md.jpg" alt="" />
                     </picture>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="../webroot/images/stairs_md.jpg"
-                    class="small-picture"
-                  >
-                    <picture>
-                      <img
-                        src="../webroot/images/stairs_md.jpg"
-                        class="active-image-stairs"
-                        alt=""
-                      />
-                    </picture>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="../webroot/images/ripples_md.jpg"
-                    class="small-picture"
-                  >
-                    <picture>
-                      <img
-                        src="../webroot/images/ripples_md.jpg"
-                        alt="active-image--ripples"
-                      />
-                    </picture>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="../webroot/images/sunset_md.jpg"
-                    class="small-picture"
-                  >
-                    <picture>
-                      <img
-                        src="../webroot/images/sunset_md.jpg"
-                        class="active-image-sunset"
-                        alt=""
-                      />
-                    </picture>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="../webroot/images/arches_md.jpg"
-                    class="small-picture"
-                  >
-                    <picture>
-                      <img
-                        src="../webroot/images/arches_md.jpg"
-                        class="active-image-arches"
-                        alt=""
-                      />
-                    </picture>
-                  </a>
-                </li>
-                <li>
-                  <a href="../webroot/images/car_md.jpg" class="small-picture">
-                    <picture>
-                      <img
-                        src="../webroot/images/car_md.jpg"
-                        class="active-image-car"
-                        alt=""
-                      />
-                    </picture>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="../webroot/images/dunes_md.jpg"
-                    class="small-picture"
-                  >
-                    <picture>
-                      <img src="../webroot/images/dunes_md.jpg" alt="" />
-                    </picture>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="../webroot/images/canyon_md.jpg"
-                    class="small-picture"
-                  >
-                    <picture>
-                      <img
-                        src="../webroot/images/canyon_md.jpg"
-                        class="active-image-canyon--small"
-                        alt=""
-                      />
-                    </picture>
-                  </a>
-                </li>
-              </picture>
+                    <div class="active-image-wrapper">
+                        <picture class="active-image-bottom" id="children-image">
+                            <li>
+                                <a href="../webroot/images/rock_carvings_md.jpg" class="small-picture">
+                                    <picture>
+                                        <img src="../webroot/images/rock_carvings_md.jpg" class="active-image-canyon--small" alt="" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../webroot/images/stairs_md.jpg" class="small-picture">
+                                    <picture>
+                                        <img src="../webroot/images/stairs_md.jpg" class="active-image-stairs" alt="" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../webroot/images/ripples_md.jpg" class="small-picture">
+                                    <picture>
+                                        <img src="../webroot/images/ripples_md.jpg" alt="active-image--ripples" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../webroot/images/sunset_md.jpg" class="small-picture">
+                                    <picture>
+                                        <img src="../webroot/images/sunset_md.jpg" class="active-image-sunset" alt="" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../webroot/images/arches_md.jpg" class="small-picture">
+                                    <picture>
+                                        <img src="../webroot/images/arches_md.jpg" class="active-image-arches" alt="" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../webroot/images/car_md.jpg" class="small-picture">
+                                    <picture>
+                                        <img src="../webroot/images/car_md.jpg" class="active-image-car" alt="" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../webroot/images/dunes_md.jpg" class="small-picture">
+                                    <picture>
+                                        <img src="../webroot/images/dunes_md.jpg" alt="" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../webroot/images/canyon_md.jpg" class="small-picture">
+                                    <picture>
+                                        <img src="../webroot/images/canyon_md.jpg" class="active-image-canyon--small" alt="" />
+                                    </picture>
+                                </a>
+                            </li>
+                        </picture>
+                    </div>
+                </div>
+                <div class="more-info">
+                    <nav class="photo_info">
+                        <ul class="unorder_list_info">
+                            <li class="list_item_info-date">
+                                <b>Date</b>
+                                <p>July 2019</p>
+                            </li>
+                            <li class="list_item_info-location">
+                                <b>Location</b>
+                                <p>Morrocan Highlands</p>
+                            </li>
+                            <li class="list_item_info-camera">
+                                <b>Camera</b>
+                                <p>Canon EOS <br />1D Mark IV</p>
+                            </li>
+                            <li class="list_item_info-lens">
+                                <b>lens</b>
+                                <p>70mm f2.8 @ 1/16”</p>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="place-info">
+                        <header>
+                            <h2>Mineral carvings</h2>
+                        </header>
+                        <p>
+                            Deep in the deserts of Morroco, lies a dried-up valley, featuring some of the most exquisite rock formations, carved millions of years ago.
+                        </p>
+                        <p class="decription">
+                            To truly experience these beautiful formations, one has to visit them in person. I hope my photos have managed to capture the sheer size – <i> gravitas even </i> – and spellbinding nature of these eroded walls.
+                        </p>
+                        <ul class="unorder_link_icon">
+                            <li class="icon_share_link">
+                                <a href=""><img src="../webroot/icon/icon_facebook.png" alt="" /></a>
+                            </li>
+                            <li class="icon_share_link">
+                                <a href=""><img src="../webroot/icon/icon_twitter.png" alt="" /></a>
+                            </li>
+                            <li class="icon_share_link">
+                                <a href=""><img src="../webroot/icon/icon_instagram.png" alt="" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="more-info">
-            <nav class="photo_info">
-              <ul class="unorder_list_info">
-                <li class="list_item_info-date">
-                  <b>Date</b>
-                  <p>July 2019</p>
-                </li>
-                <li class="list_item_info-location">
-                  <b>Location</b>
-                  <p>Morrocan Highlands</p>
-                </li>
-                <li class="list_item_info-camera">
-                  <b>Camera</b>
-                  <p>Canon EOS <br />1D Mark IV</p>
-                </li>
-                <li class="list_item_info-lens">
-                  <b>lens</b>
-                  <p>70mm f2.8 @ 1/16”</p>
-                </li>
-              </ul>
-            </nav>
-            <div class="place-info">
-              <header>
-                <h2>Mineral carvings</h2>
-              </header>
-              <p>
-                Deep in the deserts of Morroco, lies a dried-up valley,
-                featuring some of the most exquisite rock formations, carved
-                millions of years ago.
-              </p>
-              <p class="decription">
-                To truly experience these beautiful formations, one has to visit
-                them in person. I hope my photos have managed to capture the
-                sheer size – <i> gravitas even </i>
-                – and spellbinding nature of these eroded walls.
-              </p>
-              <ul class="unorder_link_icon">
-                <li class="icon_share_link">
-                  <a href=""
-                    ><img src="../webroot/icon/icon_facebook.png" alt=""
-                  /></a>
-                </li>
-                <li class="icon_share_link">
-                  <a href=""
-                    ><img src="../webroot/icon/icon_twitter.png" alt=""
-                  /></a>
-                </li>
-                <li class="icon_share_link">
-                  <a href=""
-                    ><img src="../webroot/icon/icon_instagram.png" alt=""
-                  /></a>
-                </li>
-              </ul>
+        </article>
+        <article class="container_latest">
+            <div class="container_header">
+                <div>
+                    <header>
+                        <h3>Latest</h3>
+                        <h2>Stay up-to-date with my updates</h2>
+                    </header>
+                    <form>
+                        <label for="email">Your email address</label>
+                        <div>
+                            <input type="text" name="email" id="email" placeholder="e.g. jesse@gmail.com" />
+                            <button>Subscribe</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-          </div>
-        </div>
-      </article>
-      <article class="container_latest">
-        <div class="container_header">
-          <div>
-            <header>
-              <h3>Latest</h3>
-              <h2>Stay up-to-date with my updates</h2>
-            </header>
-            <form>
-              <label for="email">Your email address</label>
-              <div>
-                <input
-                  type="text"
-                  name="email"
-                  id="email"
-                  placeholder="e.g. jesse@gmail.com"
-                />
-                <button>Subscribe</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </article>
+        </article>
     </main>
     <footer>
-      <div class="about_photo">
-        <div class="more_link">
-          <nav>
-            <div class="about_personal">
-              <h3>Photograph</h3>
-              <p>
-                The personal website of Jesse McJessesen, professional
-                photographer.
-              </p>
-              <ul class="unorder_link_icon">
-                <li class="icon_share_link">
-                  <a href="./facebook"
-                    ><img src="../webroot/icon/icon_facebook.png" alt=""
-                  /></a>
-                </li>
-                <li class="icon_share_link">
-                  <a href="./twitter"
-                    ><img src="../webroot/icon/icon_twitter.png" alt=""
-                  /></a>
-                </li>
-                <li class="icon_share_link">
-                  <a href="./instagram"
-                    ><img src="../webroot/icon/icon_instagram.png" alt=""
-                  /></a>
-                </li>
-              </ul>
+        <div class="about_photo">
+            <div class="more_link">
+                <nav>
+                    <div class="about_personal">
+                        <h3>Photograph</h3>
+                        <p>
+                            The personal website of Jesse McJessesen, professional photographer.
+                        </p>
+                        <ul class="unorder_link_icon">
+                            <li class="icon_share_link">
+                                <a href="./facebook"><img src="../webroot/icon/icon_facebook.png" alt="" /></a>
+                            </li>
+                            <li class="icon_share_link">
+                                <a href="./twitter"><img src="../webroot/icon/icon_twitter.png" alt="" /></a>
+                            </li>
+                            <li class="icon_share_link">
+                                <a href="./instagram"><img src="../webroot/icon/icon_instagram.png" alt="" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li>
+                            <p><a href="./home">Home</a></p>
+                        </li>
+                        <li>
+                            <a href="./about">About</a>
+                        </li>
+                        <li>
+                            <a href="./portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="./blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="./contact">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="blog_entry">
+                        <li>
+                            <img src="../webroot/images/woman_xs.jpg" alt="" />
+                            <div>
+                                <p>
+                                    <a href="./">Rust, pumpkin, tans, and spices.</a>
+                                </p>
+                                <p>July 15, 2019</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../webroot/images/passage_xs.jpg" alt="" />
+                            <div>
+                                <p>
+                                    <a href="./place">Experiencing Japan</a>
+                                </p>
+                                <p>July 10, 2019</p>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <ul>
-              <li>
-                <p><a href="./home">Home</a></p>
-              </li>
-              <li>
-                <a href="./about">About</a>
-              </li>
-              <li>
-                <a href="./portfolio">Portfolio</a>
-              </li>
-              <li>
-                <a href="./blog">Blog</a>
-              </li>
-              <li>
-                <a href="./contact">Contact</a>
-              </li>
-            </ul>
-            <ul class="blog_entry">
-              <li>
-                <img src="../webroot/images/woman_xs.jpg" alt="" />
-                <div>
-                  <p>
-                    <a href="./">Rust, pumpkin, tans, and spices.</a>
-                  </p>
-                  <p>July 15, 2019</p>
-                </div>
-              </li>
-              <li>
-                <img src="../webroot/images/passage_xs.jpg" alt="" />
-                <div>
-                  <p>
-                    <a href="./place">Experiencing Japan</a>
-                  </p>
-                  <p>July 10, 2019</p>
-                </div>
-              </li>
-            </ul>
-          </nav>
         </div>
-      </div>
-      <div>
-        <ul class="copy_link">
-          <li>
-            <p>
-              <a href="./onja">Created by Laaqiq, modified by Onja</a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="./photo"> © PHOTOGRAF, 2020. All rights reserved.</a>
-            </p>
-          </li>
-        </ul>
-      </div>
+        <div>
+            <ul class="copy_link">
+                <li>
+                    <p>
+                        <a href="./onja">Created by Laaqiq, modified by Onja</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <a href="./photo"> © PHOTOGRAF, 2020. All rights reserved.</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
     </footer>
     <script>
-      const picture = (event) => {
-        const achore = event.target.closest(".small-picture");
-        if (achore) {
-          event.preventDefault();
-          const newImageUrl = document.querySelector("#current-image");
-          newImageUrl.querySelector("img").src = achore.href;
-        }
-      };
-      document.addEventListener("click", picture);
+        const picture = (event) => {
+            const achore = event.target.closest(".small-picture");
+            if (achore) {
+                event.preventDefault();
+                const newImageUrl = document.querySelector("#current-image");
+                newImageUrl.querySelector("img").src = achore.href;
+            }
+        };
+        document.addEventListener("click", picture);
     </script>
-  </body>
+</body>
+
 </html>

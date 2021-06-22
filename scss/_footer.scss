@@ -1,109 +1,124 @@
 @import "variables";
-
-footer h3 {
-  font-size: 24px;
-}
-.about_personal + ul p a {
-  color: black;
-  font-weight: bold;
-}
-.blog_entry li {
-  display: flex;
-  grid-template-columns: repeat(2, 1fr);
-  padding-bottom: 26px;
-}
-.blog_entry li b {
-  display: contents;
-}
-.blog_entry img {
-  width: 70px;
-  height: 48px;
-  margin-right: 1.25rem;
-  border-radius: 5px;
-}
-.blog_entry p a {
-  font-size: 15px;
-}
-.blog_entry p + p {
-  font-weight: bold;
-  color: black;
-}
-
-.more_link,
-.copy_link {
-  @include padding-left-right;
-}
-.copy_link {
-  padding-top: calc(var(--padding) - 51px);
-}
-
-.about_photo {
-  // @include padding-left-right;
-  border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 75px;
-}
-.about_personal + ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding-bottom: 78px;
-}
-.about_personal h3,
-p {
-  padding-bottom: calc(var(--padding) - 55px);
-}
-.about_personal h3 {
-  text-transform: uppercase;
-  line-height: 32px;
-  font-family: DM Serif Display;
-  font-weight: normal;
-}
-
-.more_link {
-  @include generalDiv
+footer {
+    .about_photo {
+        border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 75px;
+        .more_link {
+            @include generalDiv;
+            @include padding-left-right;
+            .about_personal {
+                h3 {
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    line-height: 32px;
+                    font-family: DM Serif Display;
+                    font-weight: normal;
+                }
+                h3,
+                p {
+                    padding-bottom: calc(var(--padding) - 55px);
+                }
+            }
+            .about_personal+ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                padding-bottom: 78px;
+                p {
+                    a {
+                        color: black;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .blog_entry {
+                li {
+                    display: flex;
+                    grid-template-columns: repeat(2, 1fr);
+                    padding-bottom: 26px;
+                    b {
+                        display: contents;
+                    }
+                    img {
+                        width: 70px;
+                        height: 48px;
+                        margin-right: 1.25rem;
+                        border-radius: 5px;
+                    }
+                    p {
+                        a {
+                            font-size: 15px;
+                        }
+                    }
+                    p+p {
+                        font-weight: bold;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    .about_photo+div {
+        .copy_link {
+            padding-top: calc(var(--padding) - 51px);
+            @include padding-left-right;
+            padding-bottom: 29px;
+        }
+    }
 }
 
 @media (min-width: 375px) {
-  footer nav {
-    display: flex;
-    justify-content: space-between;
-  }
-  .blog_entry img {
-    width: 100px;
-    height: 60px;
-  }
-  .copy_link {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    @include generalDiv;
-  }
-  .blog_entry li {
-    padding-bottom: 30px;
-  }
-  .about_personal {
-    p {
-      width: 57%;
+    footer {
+        .about_photo {
+            padding-top: 72px;
+            padding-left: 0;
+            padding-right: 0;
+            .about_personal {
+                p {
+                    width: 57%;
+                }
+                +ul {
+                    width: 50%;
+                }
+            }
+            .more_link {
+                nav {
+                    display: flex;
+                    justify-content: space-between;
+                    .about_personal {
+                        .blog_entry {
+                            width: 40%;
+                            li {
+                                padding-bottom: 30px;
+                                img {
+                                    width: 100px;
+                                    height: 60px;
+                                }
+                                div {
+                                    a {
+                                        font-size: var(--size);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .about_photo+div {
+            .copy_link {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                @include generalDiv;
+                padding-bottom: 75px;
+                p {
+                    margin: 0;
+                }
+            }
+        }
     }
-    + ul {
-      width: 50%;
-    }
-  }
-  .about_photo {
-    padding-top: 72px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .copy_link p {
-    margin: 0;
-  }
-  .blog_entry {
-    width: 40%;
-    a {
-      font-size: var(--size);
-    }
-  }
 }
