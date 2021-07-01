@@ -47,10 +47,10 @@
                         background-repeat: no-repeat;
                         border-radius: 5px;
                         margin-right: calc(var(--padding-value) / 4);
-                        // opacity: 0.5;
-                    }
-                    img+img {
                         opacity: 0.5;
+                    }
+                    .active-rock_carvings--small {
+                        opacity: unset;
                     }
                 }
             }
@@ -60,6 +60,7 @@
         }
         .more-info {
             .unorder_list_info {
+                padding-top: 92px;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 p {
@@ -133,6 +134,7 @@
                 padding-bottom: calc(var(--padding) - 6px);
                 padding-top: calc(var(--padding) + 11px);
                 .unorder_list_info {
+                    padding-top: 0;
                     br {
                         display: contents;
                     }

@@ -267,12 +267,14 @@ p {
           width: 35vw;
           background-repeat: no-repeat;
           border-radius: 5px;
-          margin-right: calc(var(--padding-value) / 4); }
-        .container .container_info .active_image_list .active-image-wrapper .active-image-bottom img + img {
+          margin-right: calc(var(--padding-value) / 4);
           opacity: 0.5; }
+        .container .container_info .active_image_list .active-image-wrapper .active-image-bottom .active-rock_carvings--small {
+          opacity: unset; }
     .container .container_info .active_image_list .active-image-wrapper::-webkit-scrollbar {
       display: none; }
     .container .container_info .more-info .unorder_list_info {
+      padding-top: 92px;
       display: grid;
       grid-template-columns: repeat(2, 1fr); }
       .container .container_info .more-info .unorder_list_info p {
@@ -323,8 +325,10 @@ p {
       grid-template-columns: repeat(2, 1fr);
       padding-bottom: calc(var(--padding) - 6px);
       padding-top: calc(var(--padding) + 11px); }
-      .container .container_info .more-info .unorder_list_info br {
-        display: contents; }
+      .container .container_info .more-info .unorder_list_info {
+        padding-top: 0; }
+        .container .container_info .more-info .unorder_list_info br {
+          display: contents; }
       .container .container_info .more-info .place-info p {
         letter-spacing: 0.2px; }
       .container .container_info .more-info .place-info p + p {
