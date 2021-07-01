@@ -36,9 +36,11 @@ footer {
             }
             .blog_entry {
                 li {
-                    display: flex;
-                    grid-template-columns: repeat(2, 1fr);
-                    padding-bottom: 26px;
+                    a {
+                        display: flex;
+                        grid-template-columns: repeat(2, 1fr);
+                        padding-bottom: 26px;
+                    }
                     b {
                         display: contents;
                     }
@@ -77,11 +79,9 @@ footer {
             padding-left: 0;
             padding-right: 0;
             .about_personal {
-                p {
-                    width: 57%;
-                }
+                width: 23%;
                 +ul {
-                    width: 50%;
+                    width: 27%;
                 }
             }
             .more_link {

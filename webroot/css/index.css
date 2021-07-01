@@ -459,22 +459,22 @@ footer .about_photo {
       footer .about_photo .more_link .about_personal + ul p a {
         color: black;
         font-weight: bold; }
-    footer .about_photo .more_link .blog_entry li {
+    footer .about_photo .more_link .blog_entry li a {
       display: flex;
       grid-template-columns: repeat(2, 1fr);
       padding-bottom: 26px; }
-      footer .about_photo .more_link .blog_entry li b {
-        display: contents; }
-      footer .about_photo .more_link .blog_entry li img {
-        width: 70px;
-        height: 48px;
-        margin-right: 1.25rem;
-        border-radius: 5px; }
-      footer .about_photo .more_link .blog_entry li p a {
-        font-size: 15px; }
-      footer .about_photo .more_link .blog_entry li p + p {
-        font-weight: bold;
-        color: black; }
+    footer .about_photo .more_link .blog_entry li b {
+      display: contents; }
+    footer .about_photo .more_link .blog_entry li img {
+      width: 70px;
+      height: 48px;
+      margin-right: 1.25rem;
+      border-radius: 5px; }
+    footer .about_photo .more_link .blog_entry li p a {
+      font-size: 15px; }
+    footer .about_photo .more_link .blog_entry li p + p {
+      font-weight: bold;
+      color: black; }
 
 footer .about_photo + div .copy_link {
   padding-top: calc(var(--padding) - 51px);
@@ -487,10 +487,10 @@ footer .about_photo + div .copy_link {
     padding-top: 72px;
     padding-left: 0;
     padding-right: 0; }
-    footer .about_photo .about_personal p {
-      width: 57%; }
-    footer .about_photo .about_personal + ul {
-      width: 50%; }
+    footer .about_photo .about_personal {
+      width: 23%; }
+      footer .about_photo .about_personal + ul {
+        width: 27%; }
     footer .about_photo .more_link nav {
       display: flex;
       justify-content: space-between; }
