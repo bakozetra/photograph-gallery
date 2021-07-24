@@ -1,124 +1,124 @@
 @import "variables";
 footer {
-    .about_photo {
-        border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
-        width: 100%;
-        margin: 0 auto;
-        padding-top: 75px;
-        .more_link {
-            @include generalDiv;
-            @include padding-left-right;
-            .about_personal {
-                h3 {
-                    font-size: 24px;
-                    text-transform: uppercase;
-                    line-height: 32px;
-                    font-family: DM Serif Display;
-                    font-weight: normal;
-                }
-                h3,
-                p {
-                    padding-bottom: calc(var(--padding) - 55px);
-                }
-            }
-            .about_personal+ul {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: space-between;
-                padding-bottom: 78px;
-                p {
-                    a {
-                        color: black;
-                        font-weight: bold;
-                    }
-                }
-            }
-            .blog_entry {
-                li {
-                    a {
-                        display: flex;
-                        grid-template-columns: repeat(2, 1fr);
-                        padding-bottom: 26px;
-                    }
-                    b {
-                        display: contents;
-                    }
-                    img {
-                        width: 70px;
-                        height: 48px;
-                        margin-right: 1.25rem;
-                        border-radius: 5px;
-                    }
-                    p {
-                        a {
-                            font-size: 15px;
-                        }
-                    }
-                    p+p {
-                        font-weight: bold;
-                        color: black;
-                    }
-                }
-            }
+  .about_photo {
+    border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 75px;
+    .more_link {
+      @include generalDiv;
+      @include padding-left-right;
+      .about_personal {
+        h3 {
+          font-size: 24px;
+          text-transform: uppercase;
+          line-height: 32px;
+          font-family: DM Serif Display;
+          font-weight: normal;
         }
-    }
-    .about_photo+div {
-        .copy_link {
-            padding-top: calc(var(--padding) - 51px);
-            @include padding-left-right;
-            padding-bottom: 29px;
+        h3,
+        p {
+          padding-bottom: calc(var(--padding) - 55px);
         }
+      }
+      .about_personal + ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-bottom: 78px;
+        p {
+          a {
+            color: black;
+            font-weight: bold;
+          }
+        }
+      }
+      .blog_entry {
+        li {
+          a {
+            display: flex;
+            grid-template-columns: repeat(2, 1fr);
+            padding-bottom: 26px;
+          }
+          b {
+            display: contents;
+          }
+          img {
+            width: 70px;
+            height: 48px;
+            margin-right: 1.25rem;
+            border-radius: 5px;
+          }
+          p {
+            a {
+              font-size: 15px;
+            }
+          }
+          p + p {
+            font-weight: bold;
+            color: black;
+          }
+        }
+      }
     }
+  }
+  .about_photo + div {
+    .copy_link {
+      padding-top: calc(var(--padding) - 51px);
+      @include padding-left-right;
+      padding-bottom: 29px;
+    }
+  }
 }
 
-@media (min-width: 375px) {
-    footer {
-        .about_photo {
-            padding-top: 72px;
-            padding-left: 0;
-            padding-right: 0;
-            .about_personal {
-                width: 23%;
-                +ul {
-                    width: 27%;
-                }
-            }
-            .more_link {
-                nav {
-                    display: flex;
-                    justify-content: space-between;
-                    .about_personal {
-                        .blog_entry {
-                            width: 40%;
-                            li {
-                                padding-bottom: 30px;
-                                img {
-                                    width: 100px;
-                                    height: 60px;
-                                }
-                                div {
-                                    a {
-                                        font-size: var(--size);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+@media (min-width: 800px) {
+  footer {
+    .about_photo {
+      padding-top: 72px;
+      padding-left: 0;
+      padding-right: 0;
+      .about_personal {
+        width: 23%;
+        + ul {
+          width: 27%;
         }
-        .about_photo+div {
-            .copy_link {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                @include generalDiv;
-                padding-bottom: 75px;
-                p {
-                    margin: 0;
+      }
+      .more_link {
+        nav {
+          display: flex;
+          justify-content: space-between;
+          .about_personal {
+            .blog_entry {
+              width: 40%;
+              li {
+                padding-bottom: 30px;
+                img {
+                  width: 100px;
+                  height: 60px;
                 }
+                div {
+                  a {
+                    font-size: var(--size);
+                  }
+                }
+              }
             }
+          }
         }
+      }
     }
+    .about_photo + div {
+      .copy_link {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @include generalDiv;
+        padding-bottom: 67px;
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
 }

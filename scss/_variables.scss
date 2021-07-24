@@ -7,19 +7,15 @@ $start-number: 1rem;
 $first-color: #434ccc;
 $letterColor: white;
 
-
-
 @mixin decoration {
   text-decoration: $none;
 }
-
 @mixin colors {
   background-color: $first-color;
 }
 @mixin letter-color {
   color: $letterColor;
 }
-
 @mixin generalColor {
   color: rgba(0, 0, 0, 0.5);
 }
@@ -29,7 +25,6 @@ $letterColor: white;
 @mixin transformUppercase {
   text-transform: $transform-text;
 }
-
 @mixin padding-left-right {
   padding-left: 14px;
   padding-right: 15px;
@@ -38,12 +33,10 @@ $letterColor: white;
   height: 48px;
   margin-bottom: 1rem;
 }
-
 @mixin reset-list {
   transform: translateX(-180px);
   position: $position;
 }
-
 @mixin horizontal-list {
   @include reset-list;
   ul {
@@ -66,30 +59,24 @@ $letterColor: white;
     padding-bottom: 2rem;
   }
 }
-
-
 @mixin generalDiv {
   max-width: 1170px;
   margin-inline-end: auto;
   margin-inline-start: auto;
 }
-
 @mixin desktopFont-size {
   font-size: 52px;
 }
 @mixin desktopFont-size-beauty {
   font-size: 72px;
 }
-
 @mixin line-height {
   font-size: 16px;
   line-height: 24px;
 }
-
 @mixin font-size1 {
   font-size: 52px;
 }
-
 @mixin font-size2 {
   font-size: 40px;
 }

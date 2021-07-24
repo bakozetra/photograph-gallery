@@ -24,32 +24,23 @@ li {
 h2,
 footer h3 {
   font-size: 40px;
-  font-family: " DM Serif Display";
+  font-family: "DM Serif Display";
   color: #000000;
   margin: 0;
 }
-
 h3 {
   margin: 0;
 }
-
 p {
   margin: 0;
 }
-
 ul {
   padding-left: $origin;
   margin: 0;
 }
-
 article {
   @include padding-left-right;
 }
-
-// form input {
-//   box-sizing: border-box;
-// }
-
 form input,
 button {
   border-radius: 5px;
@@ -62,11 +53,9 @@ footer p,
 .unorder_list_info b {
   @include generalColor;
 }
-
 figure {
   margin: $origin;
 }
-
 li a,
 input,
 button {
@@ -78,7 +67,6 @@ h1 a,
 .list_item_menu a {
   @include letter-color;
 }
-
 a {
   @include decoration;
 }
