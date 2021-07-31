@@ -17,7 +17,6 @@
 
 We can see my demo following those links :
 <a href="https://front-end-finals.netlify.app/"> Memo</a>
-some experience :
 
 some experience :
 
