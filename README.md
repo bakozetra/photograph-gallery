@@ -54,5 +54,4 @@ $ npm start or yarn start
 
 ## Contact
 
-- Website [Photograph](https://front-end-finals.netlify.app/})
-- GitHub [Bakozetra](https://{github.com/your-usermame})
+- GitHub [@Bakozetra](https://github.com/bakozetra)
