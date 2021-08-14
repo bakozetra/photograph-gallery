@@ -21,11 +21,13 @@ body {
   font-weight: normal; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  width: 100%;
+  height: 100%; }
 
 html {
   width: 100%;
-  max-width: 1440px;
+  height: 100%;
   overflow-x: hidden; }
 
 h1 {
@@ -382,7 +384,8 @@ button {
 
 .container_header {
   margin-left: 14px;
-  margin-right: 15px; }
+  margin-right: 15px;
+  max-width: 1170px; }
 
 .container_header h3 {
   padding-top: calc(var(--padding) - 17px);
