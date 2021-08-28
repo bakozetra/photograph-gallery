@@ -6,6 +6,7 @@
 
 - [Overview](#overview)
   - [Built With](#built-with)
+- [Description](#description)
 - [How to use](#how-to-use)
 - [Contact](#contact)
 
@@ -15,19 +16,14 @@
 
 ![screenshote](photograph.png)
 
-We can see my demo following those links :
-<a href="https://front-end-finals.netlify.app/"> Memo</a>
+We can see the demo following this <a href="https://front-end-finals.netlify.app/">link</a> :
 
-some experience :
+<!-- some experience :
 
-- I built this project based on an existing project.
+- This project is based on an existing project.
 
 - What have I learned and improved
-  When I built this project , I gained some knowledge. First, I have learned how to use image sliders , secondly , using sass with fonts.
-
-Wisdom to share :
-
-- To learn is to not be afraid of making mistakes. The more you make mistakes the more you learn.
+  When I built this project , I gained some knowledge. First, I have learned how to use image sliders , secondly , using sass with fonts. -->
 
 ## Built with
 
@@ -35,6 +31,10 @@ Wisdom to share :
 
 - [HTML](https://html.com/)
 - [Sass](https://sass-lang.com/guide)
+
+## Description
+
+This project is an assessment that helps for learning css with sass,responsiveness and image slider. It is based on an existing project.
 
 ## How To Use
 
